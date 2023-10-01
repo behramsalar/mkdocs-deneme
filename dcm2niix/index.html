@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../dcm2nifti-giris/">
+      
+      
+        <link rel="next" href="../page2/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>DICOM > NIfTI Dönüştürülmesi - fMRi preprocessing pipeline</title>
+        <title>dcm2niix - fMRi preprocessing pipeline</title>
       
     
     
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DICOM > NIfTI Dönüştürülmesi
+              dcm2niix
             
           </span>
         </div>
@@ -211,18 +215,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -236,7 +242,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             DICOM to NiFTi
@@ -249,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dcm2nıfti-giris.md" class="md-nav__link">
+      <a href="../dcm2nifti-giris/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -267,9 +273,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    dcm2niix
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -278,6 +304,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dcm2niix" class="md-nav__link">
+    'dcm2niix'
+  </a>
+  
+    <nav class="md-nav" aria-label="'dcm2niix'">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dcm2niix-kurulumu" class="md-nav__link">
+    'dcm2niix' Kurulumu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dcm2niix-nasl-kullanlr" class="md-nav__link">
+    'dcm2niix' Nasıl Kullanılır?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dcm2niix-kullanmna-bir-ornek" class="md-nav__link">
+    'dcm2niix' Kullanımına bir örnek
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asd" class="md-nav__link">
+    asd
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -408,13 +495,6 @@
 
 
 <h1 id="dicom-nifti-donusturulmesi">DICOM &gt; NIfTI Dönüştürülmesi</h1>
-<h2 id="dicom-nedir">DICOM nedir?</h2>
-<p>MR görüntüleme cihazından export edilen tüm datalar DICOM (Digital Imaging and Communications in Medicine) adı verilen standart bir formatla gelir. </p>
-<p>Bu format yalnızca MR datalarına spesifik değil, tüm medikal görüntüleme yöntemlerinde kullanılan bir standarttır.</p>
-<p>E-nabız veya pacs gibi sistemlerde bu görüntüler çeşitli DICOM görüntüleyici programlar aracılığıyla görüntülenir.</p>
-<h2 id="nifti-nedir">NIfTI nedir?</h2>
-<p>NIfTI MR görüntülerinin analizinin ve depolanmasının kolaylaştırılması amacıyla ortaya çıkmış bir formattır.</p>
-<p>Bu formattaki datalar <em>.nii veya </em>.nii.gz uzantılarına sahip olabilir. *.nii.gz uzantılı dosyalar sıkıştırılmış dosyalardır ve hafızada kapladıkları alan açısından daha verimlilerdir.</p>
 <h2 id="dcm2niix"><strong>'dcm2niix'</strong></h2>
 <p>MR görüntülerinin DICOM'dan NIfTI'ye dönüştürülmesi dcm2niix adlı program ile yapılır. 
 Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>veya</strong> MRicroGL adlı programla birlikte gelen görsel arayüzlü versiyonu kullanılabilir.</p>
