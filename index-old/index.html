@@ -10,22 +10,20 @@
       
       
       
-        <link rel="next" href="dcm2nifti-giris/">
       
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>fMRi preprocessing pipeline</title>
+        <title>DICOM > NIfTI Dönüştürülmesi - fMRi preprocessing pipeline</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -44,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -89,9 +87,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="fMRi preprocessing pipeline" class="md-header__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
+    <a href=".." title="fMRi preprocessing pipeline" class="md-header__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
       
-  <img src="pngegg.png" alt="logo">
+  <img src="../pngegg.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -108,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Anasayfa
+              DICOM > NIfTI Dönüştürülmesi
             
           </span>
         </div>
@@ -208,9 +206,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="fMRi preprocessing pipeline" class="md-nav__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
+    <a href=".." title="fMRi preprocessing pipeline" class="md-nav__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
       
-  <img src="pngegg.png" alt="logo">
+  <img src="../pngegg.png" alt="logo">
 
     </a>
     fMRi preprocessing pipeline
@@ -222,29 +220,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Anasayfa
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -253,81 +231,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dicom-nedir" class="md-nav__link">
-    DICOM nedir?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nifti-nedir" class="md-nav__link">
-    NIfTI nedir?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dcm2niix" class="md-nav__link">
-    'dcm2niix'
-  </a>
-  
-    <nav class="md-nav" aria-label="'dcm2niix'">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dcm2niix-kurulumu" class="md-nav__link">
-    'dcm2niix' Kurulumu
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dcm2niix-nasl-kullanlr" class="md-nav__link">
-    'dcm2niix' Nasıl Kullanılır?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dcm2niix-kullanmna-bir-ornek" class="md-nav__link">
-    'dcm2niix' Kullanımına bir örnek
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asd" class="md-nav__link">
-    asd
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -374,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dcm2nifti-giris/" class="md-nav__link">
+      <a href="../dcm2nifti-giris/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -394,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dcm2niix/" class="md-nav__link">
+      <a href="../dcm2niix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -414,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="page2/" class="md-nav__link">
+      <a href="../page2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -496,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages1/" class="md-nav__link">
+      <a href="../pages1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,13 +461,13 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
 <p>Görsel arayüze sahip versiyonu da aşağıdaki linkten indirilebilen MRicroGL isimli programla birlikte gelmektedir.</p>
 <p>https://www.nitrc.org/projects/mricrogl/</p>
 <p>dcm2niix programına resimdeki gibi Import &gt; Convert DICOM to Nifti seçilerek ulaşılır. </p>
-<p><img alt="" src="mricrogl.png" title="MRICROGL" /></p>
+<p><img alt="" src="../mricrogl.png" title="MRICROGL" /></p>
 <p>Programın görsel arayüzü de kullandığınız sisteme göre değişme ihtimaliyle beraber alttaki resimdeki gibi olacaktır.</p>
-<p><img alt="" src="dcm2niix.png" title="dcm2niix" /></p>
+<p><img alt="" src="../dcm2niix.png" title="dcm2niix" /></p>
 <h3 id="dcm2niix-nasl-kullanlr">'dcm2niix' Nasıl Kullanılır?</h3>
 <p><em>Bu kısımda terminal üzerinden çalışan versiyonun nasıl kullanılacağından bahsedeceğim. Görsel arayüzlü versiyonun nasıl kullanıldığını açıklamaya pek gerek olduğunu düşünmüyorum, arayüzde ayarlar ve nasıl kullanıldığı net bir şekilde görülüyor.</em></p>
 <p>Öncelikle bir terminal penceresi açıp, dcm2niix yazarak programı çağırıp, ne tür argümanlar aldığını inceleyelim.</p>
-<p><img alt="cli dcm2niix" src="dcm2niix-cl.png" title="dcm2niix-cli" /></p>
+<p><img alt="cli dcm2niix" src="../dcm2niix-cl.png" title="dcm2niix-cli" /></p>
 <p>Resimde görülen -b -v -z -f gibi listelenmiş her bir madde bu programın alabileceği argümanları (<em>ya da değiştirebileceğimiz parametreleri</em>) gösteriyor. Bunların birçoğu için default değerler resimde görüldüğü gibi parantez içinde verilmiş. Yani bu parametreleri özel olarak belirtmediğiniz taktirde default değerleri kullanacak.</p>
 <p>Bu listedekilerden sadece birkaçına dikkat edeceğiz.</p>
 <ul>
@@ -653,10 +556,10 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../assets/javascripts/bundle.726fbb30.min.js"></script>
       
     
   </body>
