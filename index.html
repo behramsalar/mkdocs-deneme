@@ -18,11 +18,14 @@
     
     
       
-        <title>My Docs</title>
+        <title>dcm2niix - fMRi preprocessing pipeline</title>
       
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.d451bc0e.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -36,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -51,11 +54,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -63,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#dicom-nifti-donusturulmesi" class="md-skip">
           Skip to content
         </a>
       
@@ -79,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="." title="fMRi preprocessing pipeline" class="md-header__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,18 +99,20 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My Docs
+            fMRi preprocessing pipeline
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              dcm2niix
             
           </span>
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -169,21 +177,61 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="." title="fMRi preprocessing pipeline" class="md-nav__button md-logo" aria-label="fMRi preprocessing pipeline" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    My Docs
+    fMRi preprocessing pipeline
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DICOM to NiFTi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            DICOM to NiFTi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
     
@@ -201,7 +249,7 @@
           
   
   <span class="md-ellipsis">
-    Home
+    dcm2niix
   </span>
   
 
@@ -212,7 +260,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    dcm2niix
   </span>
   
 
@@ -234,15 +282,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#dicom-nedir" class="md-nav__link">
+    DICOM nedir?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#nifti-nedir" class="md-nav__link">
+    NIfTI nedir?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dcm2niix" class="md-nav__link">
+    'dcm2niix'
+  </a>
+  
+    <nav class="md-nav" aria-label="'dcm2niix'">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dcm2niix-kurulumu" class="md-nav__link">
+    'dcm2niix' Kurulumu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dcm2niix-nasl-kullanlr" class="md-nav__link">
+    'dcm2niix' Nasıl Kullanılır?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dcm2niix-kullanmna-bir-ornek" class="md-nav__link">
+    'dcm2niix' Kullanımına bir örnek
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asd" class="md-nav__link">
+    asd
   </a>
   
 </li>
@@ -250,6 +339,14 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -296,7 +393,7 @@
             
   
   <span class="md-ellipsis">
-    secondlevel
+    deneme2
   </span>
   
 
@@ -306,7 +403,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            secondlevel
+            deneme2
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -316,11 +413,11 @@
   
   
     <li class="md-nav__item">
-      <a href="pages2.md" class="md-nav__link">
+      <a href="pages1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    thirdlevel
+    deneme
   </span>
   
 
@@ -337,90 +434,12 @@
   
 
     
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="deneme2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    11111
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="index22/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DICOM > NIfTI Dönüştürülmesi
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -430,21 +449,87 @@
                   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="dicom-nifti-donusturulmesi">DICOM &gt; NIfTI Dönüştürülmesi</h1>
+<h2 id="dicom-nedir">DICOM nedir?</h2>
+<p>MR görüntüleme cihazından export edilen tüm datalar DICOM (Digital Imaging and Communications in Medicine) adı verilen standart bir formatla gelir. </p>
+<p>Bu format yalnızca MR datalarına spesifik değil, tüm medikal görüntüleme yöntemlerinde kullanılan bir standarttır.</p>
+<p>E-nabız veya pacs gibi sistemlerde bu görüntüler çeşitli DICOM görüntüleyici programlar aracılığıyla görüntülenir.</p>
+<h2 id="nifti-nedir">NIfTI nedir?</h2>
+<p>NIfTI MR görüntülerinin analizinin ve depolanmasının kolaylaştırılması amacıyla ortaya çıkmış bir formattır.</p>
+<p>Bu formattaki datalar <em>.nii veya </em>.nii.gz uzantılarına sahip olabilir. *.nii.gz uzantılı dosyalar sıkıştırılmış dosyalardır ve hafızada kapladıkları alan açısından daha verimlilerdir.</p>
+<h2 id="dcm2niix"><strong>'dcm2niix'</strong></h2>
+<p>MR görüntülerinin DICOM'dan NIfTI'ye dönüştürülmesi dcm2niix adlı program ile yapılır. 
+Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>veya</strong> MRicroGL adlı programla birlikte gelen görsel arayüzlü versiyonu kullanılabilir.</p>
+<p>MR analizlerini kendi kişisel bilgisayarında yapmak isteyenler öncelikle bu programı indirmelidir.</p>
+<h3 id="dcm2niix-kurulumu">'dcm2niix' Kurulumu</h3>
+<blockquote>
+<p><em><strong>Ön not:</strong> Benim kendi tercihim terminal üzerinden çalışan ve görsel arayüzü olmayan versiyonunu kullanmak. Output'ları modifiye etmeyi ve bir çok dosyanın aynı anda çevirilmesini otomatize etmeyi bu şekilde daha kolay buluyorum.</em></p>
+</blockquote>
+<p>Command-line versiyonu aşağıdaki komutu terminale yapıştırarak indirilebilir.</p>
+<p>pip install dcm2niix</p>
+<p>veya çalışmadıysa;</p>
+<p>pip3 install dcm2niix</p>
+<hr />
+<p>Görsel arayüze sahip versiyonu da aşağıdaki linkten indirilebilen MRicroGL isimli programla birlikte gelmektedir.</p>
+<p>https://www.nitrc.org/projects/mricrogl/</p>
+<p>dcm2niix programına resimdeki gibi Import &gt; Convert DICOM to Nifti seçilerek ulaşılır. </p>
+<p><img alt="" src="mricrogl.png" title="MRICROGL" /></p>
+<p>Programın görsel arayüzü de kullandığınız sisteme göre değişme ihtimaliyle beraber alttaki resimdeki gibi olacaktır.</p>
+<p><img alt="" src="dcm2niix.png" title="dcm2niix" /></p>
+<h3 id="dcm2niix-nasl-kullanlr">'dcm2niix' Nasıl Kullanılır?</h3>
+<p><em>Bu kısımda terminal üzerinden çalışan versiyonun nasıl kullanılacağından bahsedeceğim. Görsel arayüzlü versiyonun nasıl kullanıldığını açıklamaya pek gerek olduğunu düşünmüyorum, arayüzde ayarlar ve nasıl kullanıldığı net bir şekilde görülüyor.</em></p>
+<p>Öncelikle bir terminal penceresi açıp, dcm2niix yazarak programı çağırıp, ne tür argümanlar aldığını inceleyelim.</p>
+<p><img alt="cli dcm2niix" src="dcm2niix-cl.png" title="dcm2niix-cli" /></p>
+<p>Resimde görülen -b -v -z -f gibi listelenmiş her bir madde bu programın alabileceği argümanları (<em>ya da değiştirebileceğimiz parametreleri</em>) gösteriyor. Bunların birçoğu için default değerler resimde görüldüğü gibi parantez içinde verilmiş. Yani bu parametreleri özel olarak belirtmediğiniz taktirde default değerleri kullanacak.</p>
+<p>Bu listedekilerden sadece birkaçına dikkat edeceğiz.</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>
+<p>-v bu parametre programın yaptığı şeyleri terminalde görmeniz için logluyor. Hatalarla karşılaşma durumunda hatanın hangi noktada oluştuğunu anlamak için -v y şeklinde kullanılmalı (1)</p>
+</li>
+<li>
+<p>-z bu parametrenin default'u yukarıda da görülebileceği gibi <strong>'n'</strong>, yani output'u sıkıştırılmış dosya şeklinde vermiyor default olarak. (<em>.nii.gz uzantılı vermiyor, </em>.nii uzantılı şekilde veriyor.) Depolama alanından kazanmak için bu parametreyi değiştirmemiz gerekiyor. <strong>-z y</strong> şeklinde ekleme yapacağız programı çalıştırırken. (2)</p>
+</li>
+<li>
+<p>-f parametresı output dosyasının isimlendirilmesi ile ilgili. Yapacağınız çalışmalarda bir düzen olması açısından bir isimlendirilme şeması takip edilmeli. Grup isimlerine göre bir prefix seçilip, katılımcı koduna göre de bir numara verilebilir. Örn; cont01, pt03. Bu parametre aynı zamanda % işareti ile MR datasının çeşitli özelliklerini isime ekleyebiliyor. (3)</p>
+<ul>
+<li>%p ile datanın ismine hangi protokol ile çekildiği eklenebilir. Dönüştürme sonrasında hangi datanın hangi protokolle çekildiğini ayırt etmek için en azından bu yapılmalıdır.</li>
+<li>Örnek kullanım; -f cont01_%p </li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+<li>
+<p>-o parametresi dönüştürülen dosyaların hangi klasöre gönderileceğini belirlemek için kullanılıyor. Bu parametre verilmediği taktirde Nifti'ye dönüştürülen dosyalar DICOM dosyalarının olduğu klasöre gider. (4)</p>
+<ul>
+<li>
+<blockquote>
+<p>Dosyaların lokasyonları analiz programlarını çalıştırırken çok büyük öneme sahip. O yüzden, sistemli ve düzenli olmak açısından DICOM klasörünün içerisine veya başka belirlenmiş bir lokasyona yeni bir klasör açıp output klasörü olarak onu göstermeyi tavsiye ederim.</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<blockquote>
+<p>Örn; cont01 isimli DICOM dosyalarının içine 'mkdir cont01/nifti' komutu ile bir klasör açılıp output olarak bu klasör verilebilir.</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>En son olarak da herhangi bir - içeren argüman kullanmadan MR datasını Nifti'ye çevireceğimiz katılımcının DICOM dosyalarının olduğu klasörü vereceğiz. (5)</p>
+</li>
+</ul>
+<p>Terminale girilecek kodun son hali şuna benzemeli: </p>
+<p>dcm2niix -v y -z y -f cont01_%p -o cont01/nifti cont01</p>
+<h2 id="dcm2niix-kullanmna-bir-ornek">'dcm2niix' Kullanımına bir örnek</h2>
+<p>Aşağıdaki resimlerdede cont01 kodlu bir katılımcının DICOM dosyalarını içeren klasörün bir resmini görüyorsunuz.</p>
+<p>Terminal de ilk satırda görülebileceği gibi cont01 klasörünü içeren mr-analiz-tutorial klasöründe çalışıyor.
+* &gt;Terminalin hangi klasörde çalıştığı gibi temel bilgileri ilerleyen kısımlarda tekrar etmeyeceğim, örnek olması açısından buraya ekledim.
+* &gt; Bir diğer not olarak da cont01 klasörünün içindeki nifti klasörü benim yukarıda bahsettiğim şekilde düzenli olmak açısından kendi oluşturduğum bir klasör.</p>
+<p><img src="dcm2niix-ornklasor.png" width= "700" >
+<img src="dcm2niix-terminal3.png" width= "700" ></p>
+<hr />
+<p>Program çalışmayı bitirip dönüştürmeyi tamamladıktan sonra nifti klasörünün içinde oluşan dosyalara ve isimlerine baktığımızda, -f argümanıyla verdiğimiz şekilde istediğimiz gibi sonuç aldığımızı görebiliriz. 
+<img src="dcm2niix-ornklasorsonuc.png" width= "700" ></p>
+<h2 id="asd">asd</h2>
 
 
 
@@ -482,7 +567,7 @@ docs/
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.726fbb30.min.js"></script>
