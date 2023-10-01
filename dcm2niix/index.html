@@ -20,7 +20,7 @@
     
     
       
-        <title>dcm2niix - fMRi preprocessing pipeline</title>
+        <title>DICOM > NiFTi dönüştürülmesi - fMRi preprocessing pipeline</title>
       
     
     
@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime">
   
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              dcm2niix
+              DICOM > NiFTi dönüştürülmesi
             
           </span>
         </div>
@@ -123,7 +123,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -133,7 +133,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -287,7 +287,7 @@
         
   
   <span class="md-ellipsis">
-    Giriş
+    Dosya formatları
   </span>
   
 
@@ -316,7 +316,7 @@
           
   
   <span class="md-ellipsis">
-    dcm2niix
+    DICOM > NiFTi dönüştürülmesi
   </span>
   
 
@@ -327,7 +327,7 @@
         
   
   <span class="md-ellipsis">
-    dcm2niix
+    DICOM > NiFTi dönüştürülmesi
   </span>
   
 
@@ -383,8 +383,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#asd" class="md-nav__link">
-    asd
+  <a href="#olusan-dosyalar" class="md-nav__link">
+    Oluşan dosyalar
   </a>
   
 </li>
@@ -552,20 +552,20 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
 <p>Bu listedekilerden sadece birkaçına dikkat edeceğiz.</p>
 <ul>
 <li>
-<p>-v bu parametre programın yaptığı şeyleri terminalde görmeniz için logluyor. Hatalarla karşılaşma durumunda hatanın hangi noktada oluştuğunu anlamak için -v y şeklinde kullanılmalı (1)</p>
+<p><strong>-v;</strong> bu argüman programın yaptığı şeyleri terminalde görmeniz için logluyor. Hatalarla karşılaşma durumunda hatanın hangi noktada oluştuğunu anlamak için -v y şeklinde kullanılmalı (1)</p>
 </li>
 <li>
-<p>-z bu parametrenin default'u yukarıda da görülebileceği gibi <strong>'n'</strong>, yani output'u sıkıştırılmış dosya şeklinde vermiyor default olarak. (<em>.nii.gz uzantılı vermiyor, </em>.nii uzantılı şekilde veriyor.) Depolama alanından kazanmak için bu parametreyi değiştirmemiz gerekiyor. <strong>-z y</strong> şeklinde ekleme yapacağız programı çalıştırırken. (2)</p>
+<p><strong>-z;</strong> bu argümanın default'u yukarıda da görülebileceği gibi <strong>'n'</strong>, yani output'u sıkıştırılmış dosya şeklinde vermiyor default olarak. (<em>.nii.gz uzantılı vermiyor, </em>.nii uzantılı şekilde veriyor.) Depolama alanından kazanmak için bu parametreyi değiştirmemiz gerekiyor. <strong>-z y</strong> şeklinde ekleme yapacağız programı çalıştırırken. (2)</p>
 </li>
 <li>
-<p>-f parametresı output dosyasının isimlendirilmesi ile ilgili. Yapacağınız çalışmalarda bir düzen olması açısından bir isimlendirilme şeması takip edilmeli. Grup isimlerine göre bir prefix seçilip, katılımcı koduna göre de bir numara verilebilir. Örn; cont01, pt03. Bu parametre aynı zamanda % işareti ile MR datasının çeşitli özelliklerini isime ekleyebiliyor. (3)</p>
+<p><strong>-f;</strong> argümani output dosyasının isimlendirilmesi ile ilgili. Yapacağınız çalışmalarda bir düzen olması açısından bir isimlendirilme şeması takip edilmeli. Grup isimlerine göre bir prefix seçilip, katılımcı koduna göre de bir numara verilebilir. Örn; cont01, pt03. Bu parametre aynı zamanda % işareti ile MR datasının çeşitli özelliklerini isime ekleyebiliyor. (3)</p>
 <ul>
 <li>%p ile datanın ismine hangi protokol ile çekildiği eklenebilir. Dönüştürme sonrasında hangi datanın hangi protokolle çekildiğini ayırt etmek için en azından bu yapılmalıdır.</li>
 <li>Örnek kullanım; -f cont01_%p </li>
 </ul>
 </li>
 <li>
-<p>-o parametresi dönüştürülen dosyaların hangi klasöre gönderileceğini belirlemek için kullanılıyor. Bu parametre verilmediği taktirde Nifti'ye dönüştürülen dosyalar DICOM dosyalarının olduğu klasöre gider. (4)</p>
+<p><strong>-o;</strong> bu argüman dönüştürülen dosyaların hangi klasöre gönderileceğini belirlemek için kullanılıyor. Bu parametre verilmediği taktirde Nifti'ye dönüştürülen dosyalar DICOM dosyalarının olduğu klasöre gider. (4)</p>
 <ul>
 <li>
 <blockquote>
@@ -586,7 +586,7 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
 </li>
 </ul>
 <p>Terminale girilecek kodun son hali şuna benzemeli: </p>
-<div class="language-bash highlight"><span class="filename">ornek kod</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>dcm2niix<span class="w"> </span>-v<span class="w"> </span>y<span class="w"> </span>-z<span class="w"> </span>y<span class="w"> </span>-f<span class="w"> </span>cont01_%p<span class="w"> </span>-o<span class="w"> </span>cont01/nifti<span class="w"> </span>cont01
+<div class="language-bash highlight"><span class="filename">örnek kullanım şekli</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>dcm2niix<span class="w"> </span>-v<span class="w"> </span>y<span class="w"> </span>-z<span class="w"> </span>y<span class="w"> </span>-f<span class="w"> </span>cont01_%p<span class="w"> </span>-o<span class="w"> </span>cont01/nifti<span class="w"> </span>cont01
 </span></code></pre></div>
 <h2 id="dcm2niix-kullanmna-bir-ornek">'dcm2niix' Kullanımına bir örnek</h2>
 <p>Aşağıdaki resimlerdede cont01 kodlu bir katılımcının DICOM dosyalarını içeren klasörün bir resmini görüyorsunuz.</p>
@@ -598,8 +598,13 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
 <hr />
 <p>Program çalışmayı bitirip dönüştürmeyi tamamladıktan sonra nifti klasörünün içinde oluşan dosyalara ve isimlerine baktığımızda, -f argümanıyla verdiğimiz şekilde istediğimiz gibi sonuç aldığımızı görebiliriz. 
 <img src="dcm2niix-ornklasorsonuc.png" width= "700" ></p>
-<h2 id="asd">asd</h2>
-<p>Some Markdown text with <span style="color:white">some <em>yellow</em> text</span>.</p>
+<h2 id="olusan-dosyalar">Oluşan dosyalar</h2>
+<p>Yukarıdaki resimde görüldüğü gibi, dcm2niix programı MR cihazında çekim alınan her bir sekans için bir adet <em><em>.nii.gz_ dosyası bir adet de _</em>.json</em> dosyası oluşturmuş. </p>
+<p>Analizde kullanacağımız sekanslar şimdilik <em><strong>fmap</strong> (fieldmap), <strong>t1w</strong> (T1 weighted) ve <strong>resting</strong> (dinlenim durumu fonksiyonel)</em> sekansları</p>
+<blockquote>
+<p><em>*.json</em> dosyaları çekim alınan sekansın parametrelerini içeren bir dosya. İlerleyen adımlarda bu dosyaların içeriğini kullanmamız gerekecek.</p>
+</blockquote>
+<p>Some Markdown text with <span style="color:red">some <em>red</em> text</span>.</p>
 
 
 
@@ -621,7 +626,8 @@ Bu programın command-line (terminal üzerinden çalışan) versiyonu <strong>ve
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2023 <a href="https://github.com/behramsalar"  target="_blank" rel="noopener">Ali Behram Salar</a>
+      &copy; 2023 <a href="https://github.com/behramsalar"  
+target="_blank" rel="noopener">Ali Behram Salar</a>
     </div>
   
   
