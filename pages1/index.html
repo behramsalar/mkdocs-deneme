@@ -425,6 +425,16 @@
   <h1>deneme</h1>
 
 <p>apaghesd1 </p>
+<div class="language-bash highlight"><span class="filename">örnek kullanım şekli</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/bin/sh</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">for</span><span class="w"> </span>j<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="sb">`</span>ls<span class="w"> </span>-d<span class="w"> </span>*/*_resting.feat<span class="sb">`</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>applywarp<span class="w"> </span>-r<span class="w"> </span><span class="si">${</span><span class="nv">j</span><span class="si">}</span>/reg/standard.nii.gz<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">              </span>-i<span class="w"> </span><span class="si">${</span><span class="nv">j</span><span class="si">}</span>/filtered_func_data_clean.nii.gz<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">              </span>-o<span class="w"> </span><span class="si">${</span><span class="nv">j</span><span class="si">}</span>/filtered_func_data_clean_standard.nii.gz<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">              </span>--premat<span class="o">=</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span>/reg/example_func2highres.mat<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">          </span>-w<span class="w"> </span><span class="si">${</span><span class="nv">j</span><span class="si">}</span>/reg/highres2standard_warp.nii.gz
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">done</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>ls<span class="w"> </span>-1<span class="w"> </span>*/*_resting.feat/filtered_func_data_clean_standard.nii.gz<span class="w"> </span>&gt;&gt;<span class="w"> </span>inputlist_new.txt
+</span></code></pre></div>
 <p>asda
 d</p>
 
